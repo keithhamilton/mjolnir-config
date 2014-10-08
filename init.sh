@@ -2,11 +2,11 @@
 
 if [ -z $1 ]; then
     echo "Please use one of the following flags:"
-    echo "  --copy-home - copy .mjolnir to ${USER}'s home folder"
-    echo "  --init - install Mjolnir, install plugins, and copy to ${USER}'s
-    home folder"
-    echo "  --install - install Mjolnir"
-    echo "  --plugins - install plugins listed in this file"
+    echo "  --copy-home (copy .mjolnir to ${USER}'s home folder)"
+    echo "  --init (install Mjolnir, install plugins, and copy to ${USER}'s
+    home folder)"
+    echo "  --install (install Mjolnir)"
+    echo "  --plugins (install plugins listed in this file)"
     exit 0
 fi
 
