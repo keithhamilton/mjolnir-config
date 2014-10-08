@@ -38,6 +38,10 @@ plugins(){
 }
 
 copy_home(){
+    if [ -e ${USER}/.mjolnir ]; then
+        rm -rf ${USER}/.mjolnir
+    fi
+
     cp -r ./.mjolnir ${USER}/.mjolnir
 }
 
@@ -52,6 +56,8 @@ init(){
     install_mjolnir
     plugins
     copy_home
+
+    open -a "Mjolnir.app"
 }
 
 exit 0
